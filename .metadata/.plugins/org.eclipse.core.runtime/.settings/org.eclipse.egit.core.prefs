@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=D\:\\hhj_data\\java_spr\\.git;
-GitRepositoriesView.GitDirectories.relative=D\:\\hhj_data\\java_spr\\.git;
+GitRepositoriesView.GitDirectories=D\:\\hhj_data\\java_spr\\.git;D\:\\hhj_data\\sts_data\\.git;
+GitRepositoriesView.GitDirectories.relative=D\:\\hhj_data\\java_spr\\.git;.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

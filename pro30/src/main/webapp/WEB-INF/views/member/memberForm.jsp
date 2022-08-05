@@ -21,21 +21,21 @@
 <body>
 	<form method="post"   action="${contextPath}/member/addMember.do">
 	<h1  class="text_center">회원 가입창</h1>
-	<table  align="center">
+	<table  align="center" border="0">
 	   <tr>
-	      <td width="200"><p align="right">아이디</td>
-	      <td width="400"><input type="text" name="id"></td>
+	      <td width="200" bgcolor="#FFCCCC"><p align="right">아이디</td>
+	      <td width="400"><input type="text" name="id" ></td>
 	   </tr>
 	   <tr>
-	      <td width="200"><p align="right">비밀번호</td>
+	      <td width="200" bgcolor="#FFCCCC"><p align="right">비밀번호</td>
 	      <td width="400"><input type="password" name="pwd"></td>
 	    </tr>
 	    <tr>
-	       <td width="200"><p align="right">이름</td>
+	       <td width="200" bgcolor="#FFCCCC"><p align="right">이름</td>
 	       <td width="400"><p><input type="text" name="name"></td>
 	    </tr>
 	    <tr>
-	       <td width="200"><p align="right">이메일</td>
+	       <td width="200" bgcolor="#FFCCCC"><p align="right">이메일</td>
 	       <td width="400"><p><input type="text" name="email"></td>
 	    </tr>
 	    <tr>

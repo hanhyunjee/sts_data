@@ -3,7 +3,6 @@ package com.myspring.pro30.member.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -11,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.myspring.pro30.member.dao.MemberDAO;
 import com.myspring.pro30.member.vo.MemberVO;
+
 
 
 @Service("memberService")
