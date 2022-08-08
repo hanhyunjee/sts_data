@@ -15,6 +15,7 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-   <h1>메인 페이지입니다!!</h1>
+   
+   <img src=resources/image/rkawk.png >
 </body>
 </html>

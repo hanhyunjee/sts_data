@@ -25,7 +25,8 @@ public class MemberServiceImpl implements MemberService {
 		membersList = memberDAO.selectAllMemberList();
 		return membersList;
 	}
-
+// int를 사용하는 이유는 1이면 true, -1이면 false를 반환하기 위해서
+	
 	@Override
 	public int addMember(MemberVO member) throws DataAccessException {
 		return memberDAO.insertMember(member);

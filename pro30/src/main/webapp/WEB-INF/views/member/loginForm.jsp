@@ -19,6 +19,10 @@
 	    window.onload=function(){
 	      alert("아이디나 비밀번호가 틀립니다.다시 로그인 하세요!");
 	    }
+	//    else {
+	//   rAttr.addAttribute("result","loginFailed");
+	//   mav.setViewName("redirect:/member/loginForm.do"); -> MemberControllerImol.java 코드
+	
 	  </script>
 	</c:when>
 </c:choose>  
@@ -31,6 +35,9 @@
          <td>아이디</td>
          <td>비밀번호</td>
       </tr>
+      
+      
+      
       <tr align="center">
          <td>
 	    <input type="text" name="id" value="" size="20">
@@ -39,12 +46,18 @@
 	    <input type="password" name="pwd" value="" size="20">
 	 </td>
       </tr>
+      
+      
+      
       <tr align="center">
-         <td colspan="2">
+         <td colspan="2"> <!-- 2칸을 병합 -->
             <input type="submit" value="로그인" > 
             <input type="reset"  value="다시입력" > 
          </td>
       </tr>
+      
+      
+      
    </table>
 </form>
 </body>
