@@ -1,4 +1,6 @@
 #Tomcat publish data
-#Mon Aug 08 15:40:32 KST 2022
-org.eclipse.jst.jee.server\:pro30=C\:\\tomcat-9\\wtpwebapps\\pro30
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.2.7.RELEASE\\spring-web-5.2.7.RELEASE.jar=C\:\\tomcat-9\\wtpwebapps\\pro30\\WEB-INF\\lib\\spring-web-5.2.7.RELEASE.jar
+#Wed Aug 10 19:47:31 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=C\:\\tomcat-9\\wtpwebapps\\OnedayTwoday_spring-master\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar
+org.eclipse.jst.jee.server\:TeamProject=C\:\\tomcat-9\\wtpwebapps\\TeamProject
+org.eclipse.jst.jee.server\:OnedayTwoday_spring-master=C\:\\tomcat-9\\wtpwebapps\\OnedayTwoday_spring-master
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.2.2.RELEASE\\spring-web-5.2.2.RELEASE.jar=C\:\\tomcat-9\\wtpwebapps\\TeamProject\\WEB-INF\\lib\\spring-web-5.2.2.RELEASE.jar

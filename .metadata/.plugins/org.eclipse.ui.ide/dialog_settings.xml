@@ -110,6 +110,12 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\505\Desktop\Member_Spring-FrameWork-MVC---iBatis---Oracle-master"/>
+			<item value="C:\Users\505\Desktop\java-spring-web-master"/>
+			<item value="C:\Users\505\Desktop\spring_mvc_board-master"/>
+			<item value="C:\Users\505\Desktop\spring_mvc_board_project_0421-master"/>
+			<item value="C:\Users\505\Desktop\spring-demo-web-master"/>
+			<item value="C:\Users\505\Desktop\vocProject-master"/>
 			<item value="D:\hhj_data\sts_data\pro30"/>
 			<item value="D:\hhj_data\sts_data\bookShop01"/>
 			<item value="D:\hhj_data\sts_data\pro28"/>
@@ -117,6 +123,26 @@
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\505\Desktop\mealkit_webSite_springMVC-main"/>
+			<item value="C:\Users\505\Desktop\OnedayTwoday_spring-master"/>
+			<item value="C:\Users\505\Desktop\naver-qna-project-main"/>
+			<item value="C:\Users\505\Desktop\spring_mvc_board-master"/>
+			<item value="C:\Users\505\Desktop\Spring_Project_KolongMall-main"/>
+			<item value="C:\Users\505\Desktop\spring-demo-web-master"/>
+			<item value="C:\Users\505\Desktop\EMOJI-master\Emoji"/>
+			<item value="C:\Users\505\Desktop\vocProject-master\vocProject0"/>
+			<item value="C:\Users\505\Desktop\vocProject-master"/>
+			<item value="C:\Users\505\Desktop\Ezen-Work-main"/>
+			<item value="C:\Users\505\Desktop\Board_SpringMVC-main"/>
+			<item value="C:\Users\505\Desktop\springMVC-main"/>
 		</list>
 	</section>
 </section>

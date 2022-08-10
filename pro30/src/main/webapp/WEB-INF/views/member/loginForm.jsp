@@ -21,7 +21,7 @@
 	    }
 	//    else {
 	//   rAttr.addAttribute("result","loginFailed");
-	//   mav.setViewName("redirect:/member/loginForm.do"); -> MemberControllerImol.java 코드
+	//   mav.setViewName("redirect:/member/loginForm.do"); -> MemberControllerImpl.java 코드
 	
 	  </script>
 	</c:when>
