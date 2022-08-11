@@ -131,6 +131,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\505\Desktop\springfinal-master"/>
+			<item value="C:\Users\505\Desktop\SpringBbs-master"/>
 			<item value="C:\Users\505\Desktop\mealkit_webSite_springMVC-main"/>
 			<item value="C:\Users\505\Desktop\OnedayTwoday_spring-master"/>
 			<item value="C:\Users\505\Desktop\naver-qna-project-main"/>
