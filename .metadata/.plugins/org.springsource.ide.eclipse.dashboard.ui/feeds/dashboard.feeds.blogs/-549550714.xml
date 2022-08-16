@@ -5,7 +5,45 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2022-08-11T10:00:00Z</updated>
+  <updated>2022-08-15T07:00:00Z</updated>
+  <entry>
+    <title>Spring Cloud Dataflow 2.9.5 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/08/15/spring-cloud-dataflow-2-9-5-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Chris Bono</name>
+    </author>
+    <id>tag:spring.io,2022-08-15:4879</id>
+    <updated>2022-08-15T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I¡¯m happy to announce that Spring Cloud Dataflow &lt;code&gt;2.9.5&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
+&lt;p&gt;This release contains an update of the Spring Boot version (&lt;code&gt;2.5.14&lt;/code&gt;) and numerous bug fixes. See the &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/releases/tag/v2.9.5"&gt;release notes&lt;/a&gt; for more information.&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tools 4.15.3 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2022/08/12/spring-tools-4-15-3-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2022-08-12:4878</id>
+    <updated>2022-08-12T09:30:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.15.3 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#fixes-and-improvements" class="anchor" name="fixes-and-improvements"&gt;&lt;/a&gt;fixes and improvements&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: Spring Boot Tools slow down code complete (&lt;a href="https://github.com/spring-projects/sts4/issues/808"&gt;#808&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Language Server)&lt;/em&gt; fixed: Copied files should retain copyright ownership (&lt;a href="https://github.com/spring-projects/sts4/issues/807"&gt;#807&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2022-08-11-4153-release-incl-language-servers-version-1380"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2022-08-11-4153-release-incl-language-servers-version-1380&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Tools 4.16.0 is scheduled to be released in mid September 2022.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: the good Dr. Venkat Subramaniam</title>
     <link rel="alternate" href="https://spring.io/blog/2022/08/11/a-bootiful-podcast-the-good-dr-venkat-subramaniam" />
@@ -1073,58 +1111,6 @@ When separating by the database, you might use &lt;code&gt;AbstractRoutingDataSo
 &lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.6.10"&gt;30 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.6.10/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Batch 5.0.0-M4 available now!</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/07/20/spring-batch-5-0-0-m4-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mahmoud Ben Hassine</name>
-    </author>
-    <id>tag:spring.io,2022-07-21:4863</id>
-    <updated>2022-07-20T19:59:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Batch 5.0.0-M4 is now available from our &lt;a href="https://repo.spring.io/milestone"&gt;milestone repository&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This fourth milestone introduces several improvements for Java Records support. It also comes with a number of enhancements, bug fixes, dependency upgrades, and documentation updates. For more details about all the changes, see the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/5.0.0-M4"&gt;release notes&lt;/a&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#java-records-support-improvement" class="anchor" name="java-records-support-improvement"&gt;&lt;/a&gt;Java Records Support Improvement&lt;/h3&gt;
-&lt;p&gt;The support for Java records as items in a chunk-oriented step was initially introduced in v4.3, but that support was limited, due to the fact that v4 has Java 8 as a baseline. In Java 8, records were not even in preview yet. That initial support was based on reflection tricks to create Java records and populate them with data, without having access to the &lt;code&gt;java.lang.Record&lt;/code&gt; API, which was finalized in Java 16.&lt;/p&gt;
-&lt;p&gt;Now that v5 has Java 17 as a baseline, we have improved records support in Spring Batch by leveraging the &lt;code&gt;java.lang.Record&lt;/code&gt; API in different parts of the framework. For example, the &lt;code&gt;FlatFileItemReaderBuilder&lt;/code&gt; is now able to detect if the item type is a record or a regular class and configure the corresponding &lt;code&gt;FieldSetMapper&lt;/code&gt; implementation accordingly (&lt;code&gt;RecordFieldSetMapper&lt;/code&gt; for records and &lt;code&gt;BeanWrapperFieldSetMapper&lt;/code&gt; for regular classes). The goal here is to make the configuration of the required &lt;code&gt;FieldSetMapper&lt;/code&gt; type &lt;em&gt;transparent&lt;/em&gt; to the user. The same feature has also been implemented in the &lt;code&gt;FlatFileItemWriterBuilder&lt;/code&gt;, in order to configure either a &lt;code&gt;RecordFieldExtractor&lt;/code&gt; or a &lt;code&gt;BeanWrapperFieldExtractor&lt;/code&gt; based on the item type.&lt;/p&gt;&lt;h3&gt;&lt;a href="#bug-fixes" class="anchor" name="bug-fixes"&gt;&lt;/a&gt;Bug fixes&lt;/h3&gt;
-&lt;p&gt;Some bugs cannot be fixed without introducing breaking changes. We take the opportunity of this major release to fix such bugs. In this milestone, the following major bugs were fixed:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Unable to read XML data without &lt;code&gt;spring-tx&lt;/code&gt; in the classpath &lt;a href="https://github.com/spring-projects/spring-batch/issues/4132"&gt;#4132&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Lost transaction attributes when using a chaining &lt;code&gt;StepBuilder&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-batch/issues/3686"&gt;#3686&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;ItemReadListener&lt;/code&gt; not being correctly registered after adding a &lt;code&gt;StepExecutionListener&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-batch/issues/773"&gt;#773&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Cannot subclass &lt;code&gt;final class com.sun.proxy.$Proxy202&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-batch/issues/793"&gt;#793&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;StepBuilderFactory&lt;/code&gt; only Supports Listener Annotations, not Listener Interfaces &lt;a href="https://github.com/spring-projects/spring-batch/issues/1098"&gt;#1098&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is not an exhaustive list. See the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/5.0.0-M4"&gt;release notes&lt;/a&gt; for the complete list of bugs that were fixed in this milestone.&lt;/p&gt;&lt;h3&gt;&lt;a href="#dependency-upgrades" class="anchor" name="dependency-upgrades"&gt;&lt;/a&gt;Dependency Upgrades&lt;/h3&gt;
-&lt;p&gt;Major dependencies have been upgraded to the following versions:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Upgrade to Spring Framework 6.0.0-M5&lt;/li&gt;
-  &lt;li&gt;Upgrade to Spring Data 2022.0.0-M5&lt;/li&gt;
-  &lt;li&gt;Upgrade to Spring Integration 6.0.0-M4&lt;/li&gt;
-  &lt;li&gt;Upgrade to Spring AMQP 3.0.0-M3&lt;/li&gt;
-  &lt;li&gt;Upgrade to Spring for Apache Kafka 3.0.0-M5&lt;/li&gt;
-  &lt;li&gt;Upgrade to Micrometer 1.10.0-M3&lt;/li&gt;
-  &lt;li&gt;Upgrade to Hibernate 6.1.1.Final&lt;/li&gt;
-&lt;/ul&gt;&lt;h3&gt;&lt;a href="#feedback" class="anchor" name="feedback"&gt;&lt;/a&gt;Feedback&lt;/h3&gt;
-&lt;p&gt;I would like to thank all contributors who had a role in this release! As we continue our work on Spring Batch 5, we look forward to your feedback on &lt;a href="https://github.com/spring-projects/spring-batch/issues"&gt;Github&lt;/a&gt;, &lt;a href="https://twitter.com/springbatch"&gt;Twitter&lt;/a&gt;, and &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt;.&lt;/p&gt;
-&lt;hr/&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt;|&lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on Github&lt;/a&gt;|&lt;a href="https://docs.spring.io/spring-batch/docs/5.0.0-M4/reference/html/index-single.html"&gt;Reference documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring for GraphQL 1.0.1 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/07/20/spring-for-graphql-1-0-1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Brian Clozel</name>
-    </author>
-    <id>tag:spring.io,2022-07-20:4858</id>
-    <updated>2022-07-20T16:18:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of everyone involved, I&amp;rsquo;m pleased to announce the first maintenance release of Spring for GraphQL, it is now available from Maven Central. This version will be shipped with Spring Boot 2.7.2.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-graphql/releases/tag/v1.0.1"&gt;10 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-graphql"&gt;&lt;code&gt;spring-graphql&lt;/code&gt; tag&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-graphql/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-graphql/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-graphql/docs/1.0.1/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-graphql"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

@@ -1,4 +1,5 @@
 #Tomcat publish data
-#Thu Aug 11 20:49:27 KST 2022
-org.eclipse.jst.jee.server\:nam=C\:\\tomcat-9\\wtpwebapps\\nam
+#Tue Aug 16 16:53:39 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.2.7.RELEASE\\spring-web-5.2.7.RELEASE.jar=C\:\\tomcat-9\\wtpwebapps\\ex01\\WEB-INF\\lib\\spring-web-5.2.7.RELEASE.jar
+org.eclipse.jst.jee.server\:ex01=C\:\\tomcat-9\\wtpwebapps\\ex01
 org.eclipse.jst.jee.server\:OnedayTwoday_spring-master=C\:\\tomcat-9\\wtpwebapps\\OnedayTwoday_spring-master
