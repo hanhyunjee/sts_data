@@ -110,6 +110,9 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\hhj_data\sts_data\ex02 (1)"/>
+			<item value="C:\Users\505\Desktop\ex01"/>
+			<item value="C:\Users\505\Desktop\genie-book-master_01"/>
 			<item value="C:\Users\505\Desktop\Member_Spring-FrameWork-MVC---iBatis---Oracle-master"/>
 			<item value="C:\Users\505\Desktop\java-spring-web-master"/>
 			<item value="C:\Users\505\Desktop\spring_mvc_board-master"/>
@@ -131,6 +134,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\hhj_data\sts_data\ex02"/>
+			<item value="C:\Users\505\Desktop\ex02"/>
 			<item value="C:\Users\505\Desktop\springfinal-master"/>
 			<item value="C:\Users\505\Desktop\SpringBbs-master"/>
 			<item value="C:\Users\505\Desktop\mealkit_webSite_springMVC-main"/>
