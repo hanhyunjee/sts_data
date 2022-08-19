@@ -35,10 +35,10 @@
           
           
             <h3>환영합니다. ${member.name }님!</h3>
-            <a href="${contextPath}/member/logout.do"><button>로그아웃</button></a>
+            <a href="${contextPath}/member/logout.do"><button >로그아웃</button></a>
           </c:when>
           <c:otherwise>
-	        <a href="${contextPath}/member/loginForm.do"><button>로그인</button></a>
+	        <a href="${contextPath}/member/loginForm.do"><button >로그인</button></a>
 	      </c:otherwise>
 	   </c:choose>     
      </td>
