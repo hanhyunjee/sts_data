@@ -110,6 +110,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\hhj_data\sts_data"/>
+			<item value="D:\hhj_data\sts_data\geniebook"/>
 			<item value="D:\hhj_data\sts_data\ex02 (1)"/>
 			<item value="C:\Users\505\Desktop\ex01"/>
 			<item value="C:\Users\505\Desktop\genie-book-master_01"/>
@@ -150,6 +152,14 @@
 			<item value="C:\Users\505\Desktop\Ezen-Work-main"/>
 			<item value="C:\Users\505\Desktop\Board_SpringMVC-main"/>
 			<item value="C:\Users\505\Desktop\springMVC-main"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="647"/>
+		<item key="DIALOG_Y_ORIGIN" value="341"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
 </section>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.notice">
+	<resultMap id="noticesResult" type="noticeVO">
+		<result property="noticeId" column="noticeId" />
+		<result property="adminId" column="adminId" />
+		<result property="title" column="title" />
+		<result property="boardDate" column="boardDate" />
+		<result property="content" column="content" />
+		<result property="viewCnt" column="viewCnt" />
+		<result property="imageFileName" column="imageFileName" />
+		<result property="originNo" column="originNo" />
+
+	</resultMap>
+
+	<!-- <resultMap id="imgResult" type="imageVO"> <result property="imageFileNO" 
+		column="imageFileNO" /> <result property="articleNO" column="articleNO" /> 
+		<result property="imageFileName" column="imageFileName" /> </resultMap> -->
+
+	<select id="selectAllNoticeList" resultMap="noticesResult">
+    <![CDATA[
+     SELECT rnum, T.*
+   FROM ( SELECT noticeId, adminId, boardDate, title, content, viewCnt, imageFileName, ROW_NUMBER() OVER(ORDER BY originNo desc) as rnum
+                   FROM notice) T
+  WHERE rnum BETWEEN #{startList} AND #{endList}
+    ]]>
+	</select>
+	
+	<select id="selectAllNoticeListById" resultMap="noticesResult" parameterType="map">
+    <![CDATA[
+     SELECT rnum, T.*
+   FROM ( SELECT noticeId, adminId, boardDate, title, content, viewCnt, imageFileName, ROW_NUMBER() OVER(ORDER BY originNo desc) as rnum
+                   FROM notice) T
+  WHERE adminId = #{id} and rnum BETWEEN #{pagination.startList} AND #{pagination.endList}
+    ]]>
+	</select>
+
+
+
+	<insert id="addNotice" parameterType="noticeVO">
+	<![CDATA[
+			insert into notice(noticeId,  adminId, title, content, imageFileName, originNo)
+			values(seq_notice_noticeId.nextval, #{adminId}, #{title}, #{content}, #{imageFileName,jdbcType=VARCHAR}, seq_notice_noticeId.nextval)
+			]]>
+	</insert>
+
+	
+	<update id="updateNotice" parameterType="noticeVO">
+	<![CDATA[
+		update notice set
+            content = #{content}
+            , boardDate = sysdate
+            , imageFileName = #{imageFileName,jdbcType=VARCHAR}
+        where
+            noticeId = #{noticeId}
+            	]]>
+	</update>
+
+	<select id="getNoticeListCnt" resultType="int">
+		<![CDATA[ select count(*) as listCnt from notice ]]>
+	</select>
+	
+	<select id="getNoticeListCntById" resultType="int" parameterType="String">
+		<![CDATA[ select count(*) as listCnt from notice where adminId = #{id} ]]>
+	</select>
+
+	<select id="selectByNoticeId" resultType="noticeVO">
+		<![CDATA[
+		select * from notice where noticeId = #{noticeId}
+		]]>
+	</select>
+
+	<delete id="deleteNotice" parameterType="Map">
+	<![CDATA[
+		delete from notice
+		where originNo = #{originNo}
+			]]>
+	</delete>
+
+	<update id="increaseViewCnt" parameterType="String">
+	<![CDATA[
+		update notice set viewCnt = viewCnt + 1
+		where noticeId = #{noticeId}
+		]]>
+	</update>
+	<!-- <select id="selectNewArticleNO" resultType="int" > <![CDATA[ SELECT 
+		max(articleNO)+1 from t_board ]]> </select> <select id="selectArticle" resultType="articleVO" 
+		parameterType="int"> <![CDATA[ SELECT * from t_board where articleNO = #{articleNO} 
+		]]> </select> <update id="updateArticle" parameterType="java.util.Map"> update 
+		t_board set title=#{title}, content=#{content} <if test="imageFileName!='' 
+		and imageFileName!=null"> , imageFileName=#{imageFileName} </if> where articleNO=#{articleNO} 
+		</update> <delete id="deleteArticle" parameterType="int"> <![CDATA[ delete 
+		from t_board where articleNO in ( SELECT articleNO FROM t_board START WITH 
+		articleNO = #{articleNO} CONNECT BY PRIOR articleNO = parentNO ) ]]> </delete> 
+		다중 이미지 추가 SQL문 <insert id="insertNewArticle" parameterType="java.util.Map"> 
+		<![CDATA[ insert into t_board(articleNO, id, title, content, imageFileName) 
+		values(#{articleNO}, #{id}, #{title}, #{content}, null) ]]> </insert> <insert 
+		id="insertNewImage" parameterType="java.util.Map"> <foreach item="item" collection="list" 
+		open="INSERT ALL" separator=" " close="SELECT * FROM DUAL" > INTO t_imageFile(imageFileNO, 
+		imageFileName, articleNO, regDate) VALUES (#{item.imageFileNO}, #{item.imageFileName}, 
+		#{item.articleNO}, sysdate) </foreach> </insert> <select id="selectNewImageFileNO" 
+		resultType="int" > <![CDATA[ SELECT nvl(max(imageFileNO),0) from t_imageFile 
+		]]> </select> <select id="selectImageFileList" resultMap="imgResult" parameterType="int"> 
+		<![CDATA[ SELECT * from t_imageFile where articleNO=#{articleNO} ]]> </select> -->
+
+</mapper>

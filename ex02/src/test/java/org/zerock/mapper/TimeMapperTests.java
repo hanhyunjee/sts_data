@@ -1,9 +1,5 @@
 package org.zerock.mapper;
 
-import static org.junit.Assert.fail;
-
-import java.sql.Connection;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,17 +12,13 @@ import lombok.extern.log4j.Log4j;
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 @Log4j
 public class TimeMapperTests {
-	
+
 	@Autowired
-//	@Setter(onMethod_ = { @Autowired })
-	
 	private TimeMapper timeMapper;
 	
 	@Test
 	public void testGetTime() {
-			
-			log.info("testGetTime...");
-			log.info(timeMapper.getTime());
-			
+		log.info("testGetTime..........");
+		log.info(timeMapper.getTime());
 	}
 }
