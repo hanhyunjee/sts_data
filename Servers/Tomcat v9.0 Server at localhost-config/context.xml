@@ -27,5 +27,5 @@
     <Manager pathname="" />
     -->
     
-    <Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/oracle" password="bg" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:XE" username="bg"/>
+    <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/mysql" password="bg" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/bg" username="bg"/>
 </Context>

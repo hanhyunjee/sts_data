@@ -26,7 +26,7 @@
       SELECT * from cartItem where cartId = #{cartId}
     ]]>
 	</select>
-	
+
 	<select id="getCartItem" resultMap="CartItemResult"
 		parameterType="map">
     <![CDATA[
@@ -36,39 +36,47 @@
 
 	<select id="isCartItemByBookNo" parameterType="map"
 		resultType="String">
-		select decode(count(*),1, 'true', 0, 'false')
+		<!-- select decode(count(*),1, 'true', 0, 'false')
+		from cartItem
+		where cartId = #{cartId} and bookNo=#{bookNo} -->
+		
+		select case count(*) when 1 then  'true'  when 0 then  'false' end
 		from cartItem
 		where cartId = #{cartId} and bookNo=#{bookNo}
 	</select>
 
 	<insert id="addCartItem" parameterType="cartItemVO">
   <![CDATA[
+    	
     	insert into cartItem(id, quantity, totalPrice, cartId, bookNo)
-    					values(seq_cartItemId.nextval, #{quantity}, #{totalPrice}, #{cartId}, #{bookNo})
+ values((select *from (select max(id)+1 from cartItem) next), #{quantity}, #{totalPrice}, #{cartId}, #{bookNo})
                                   
    ]]>
 	</insert>
-	
-	<update id="addCartItemQuantity" parameterType="map"  >
+
+	<update id="addCartItemQuantity" parameterType="map">
 	    <![CDATA[
-			update cartItem set quantity = quantity+#{quantity}, totalPrice = (quantity+#{quantity})*#{price} where cartId=#{cartId} and bookNo=#{bookNo}
-			        
+					
+			
+			update cartItem set quantity = quantity+#{quantity}, totalPrice = (quantity+#{quantity})*#{price} where cartId=#{cartId} and bookNo=#{bookNo}        
     	]]>
 	</update>
-	
-	<update id="minusCartItemQuantity" parameterType="map"  >
+
+	<update id="minusCartItemQuantity" parameterType="map">
 	    <![CDATA[
 			update cartItem set quantity = quantity-#{quantity}, totalPrice = (quantity-#{quantity})*#{price} where cartId=#{cartId} and bookNo=#{bookNo}
 			        
     	]]>
 	</update>
-	
+
 	<delete id="deleteCartItem" parameterType="map">
-		delete from cartItem where cartId = #{cartId} and bookNo = #{bookNo}
+		delete from cartItem
+		where cartId = #{cartId} and bookNo = #{bookNo}
 	</delete>
-	
+
 	<delete id="removeAll" parameterType="integer">
-		delete from cartItem where cartId = #{cartId}
+		delete from cartItem where
+		cartId = #{cartId}
 	</delete>
 
 </mapper>

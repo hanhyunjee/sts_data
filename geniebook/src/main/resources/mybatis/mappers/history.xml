@@ -28,11 +28,12 @@
 	<!-- ************************************************* -->
 	<insert id="addHistory"  parameterType="historyVO">
   <![CDATA[
-    	insert into history(id, name, cartId, email, content, phoneNum, bookNo, price, quantity, grandTotal, addr_num,
-    					addr_road, addr_detail, purchase_date)
+
+          insert into history(id, name, cartId, email, content, phoneNum, bookNo, price, quantity, grandTotal, addr_num,
+    					addr_road, addr_detail, purchase_date, point)
     					values(#{id}, #{name}, #{cartId}, #{email}, #{content}, #{phoneNum}, #{bookNo}, #{price},
     						#{quantity}, #{grandTotal}, #{addr_num}, #{addr_road}, 
-    						#{addr_detail}, sysdate)
+    						#{addr_detail}, sysdate(), #{point})          
                                   
    ]]>      
   </insert>

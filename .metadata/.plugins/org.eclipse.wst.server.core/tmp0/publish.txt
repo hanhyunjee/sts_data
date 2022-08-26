@@ -1,7 +1,4 @@
 #Tomcat publish data
-#Thu Aug 25 11:16:42 KST 2022
-org.eclipse.jst.jee.server\:geniebook2=C\:\\tomcat-9\\wtpwebapps\\geniebook2
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.2.7.RELEASE\\spring-web-5.2.7.RELEASE.jar=C\:\\tomcat-9\\wtpwebapps\\ex02\\WEB-INF\\lib\\spring-web-5.2.7.RELEASE.jar
-org.eclipse.jst.jee.server\:ex02=C\:\\tomcat-9\\wtpwebapps\\ex02
-org.eclipse.jst.jee.server\:OnedayTwoday_spring-master=C\:\\tomcat-9\\wtpwebapps\\OnedayTwoday_spring-master
+#Fri Aug 26 17:52:17 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.2.7.RELEASE\\spring-web-5.2.7.RELEASE.jar=C\:\\tomcat-9\\wtpwebapps\\geniebook\\WEB-INF\\lib\\spring-web-5.2.7.RELEASE.jar
 org.eclipse.jst.jee.server\:geniebook=C\:\\tomcat-9\\wtpwebapps\\geniebook

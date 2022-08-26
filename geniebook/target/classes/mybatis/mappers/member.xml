@@ -28,43 +28,55 @@
 	
 	<!-- 모든 회원 조회 --> <!-- 완료 -->
 	<select id="selectAllMemberList" resultType="memberVO">
+	  <!--  select * from member where id not like '%admin%' -->
 	   select * from member where id not like '%admin%'
+	  
+	  
 	</select>
 	
 	<!-- id,jumin으로 조회 --> <!-- 완료 -->
 	<select id="selectUserNameInfo" resultType="memberVO" parameterType="map">
-	   select * from member where name = #{name} and jumin = #{jumin}
+	   <!-- select * from member where name = #{name} and jumin = #{jumin} -->
+	    select * from member where name = #{name} and jumin = #{jumin}
 	</select>
 	
 	<!-- 아이디 중복검사 --> <!-- 완료 -->
 	<select id="selectOverlappedID" parameterType="String" resultType="String">
-	   select decode(count(*),1, 'true', 0, 'false')
+<!-- 	   select decode(count(*),1, 'true', 0, 'false')
 	   from member
 	   where id = #{id}
+	    -->
+	   select case count(*) when 1 then  'true'  
+	   when 0 then  'false' end
+	   from member
+	   where id ='#{id}'
 	</select>
 	
 	<!-- 사용자 추가 -->	<!-- 추가예정 -->
 	<insert id="addMember"  parameterType="memberVO">
   <![CDATA[
     	insert into member(memberNo, name, jumin, id, password, pwHint, pwHintAns, email, receive_email, authority,
-    	 houseNum, phoneNum, enabled, cartId_mem, point,acc_Price)
-    				 values(memberNo.nextval, #{name} , #{jumin}, #{id}, #{password}, #{pwHint}, #{pwHintAns},
-    				  #{email}, #{receive_email}, #{authority}, #{houseNum}, #{phoneNum}, #{enabled}, seq_cartId_mem.nextval, #{point}, #{acc_Price})
-                                  
+     houseNum, phoneNum, enabled, cartId_mem, point,acc_Price)
+     values((select *from (select max(memberNo)+1 from member) next), #{name} , #{jumin}, #{id}, #{password}, #{pwHint}, #{pwHintAns},
+     #{email}, #{receive_email}, #{authority}, #{houseNum}, #{phoneNum}, #{enabled}, (select *from (select max(cartId_mem)+1 from cartitem) next), #{point}, #{acc_Price})
    ]]>      
   </insert>
 	
 	<!-- 특정id 사용자 정보 검색 --> 
 	<select id="selectUserInfo" parameterType="String" resultType="memberVO">
-	   select *
+<!-- 	   select *
 	   from member
-	   where id = #{id}
+	   where id = #{id} -->
+	   select *
+ from member
+where id = #{id}
+	   
 	</select>
 	
 	<update id="updateMember" parameterType="memberVO"  >
 	    <![CDATA[
-			update member set password=#{password}, pwHint=#{pwHint}, pwHintAns=#{pwHintAns}, email=#{email},
-					receive_email = #{receive_email}, houseNum=#{houseNum}, phoneNum=#{phoneNum} where id=#{id}
+update member set password=#{password}, pwHint=#{pwHint}, pwHintAns=#{pwHintAns}, email=#{email},
+receive_email = #{receive_email}, houseNum=#{houseNum}, phoneNum=#{phoneNum} where id=#{id}
 			        
     	]]>
 	</update>
@@ -93,5 +105,7 @@
 			        
     	]]>
 	</update>
+	
+	
 	
 </mapper>
