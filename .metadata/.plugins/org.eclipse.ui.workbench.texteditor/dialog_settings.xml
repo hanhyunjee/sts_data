@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="stock"/>
 			<item value="MYSQL"/>
 			<item value="Q&amp;A"/>
 			<item value="board"/>
