@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="geniebook"/>
+<aop-project name="geniebook2"/>
 <aop-project name="bookShop01">
 <aspect-definition advice-class-name="com.bookshop01.common.log.LoggingAdvice" advice-method-name="timeLog(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="30" aspect-name="loggingAdvice" aspect-start-line-number="30" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/bookShop01/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="execution(* com.bookshop01.*.service.*.*(..)) or execution(* com.bookshop01.*.dao.*.*(..))" proxy-target-class="false">
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:bookShop01|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:9|8:memberDAO:9" bean-file="/bookShop01/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/bookShop01/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=bookShop01/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bookshop01.common.log{LoggingAdvice.java[LoggingAdvice~timeLog~QProceedingJoinPoint;" source-start-line="72" target="=bookShop01/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bookshop01.member.dao{MemberDAOImpl.java[MemberDAOImpl~selectOverlappedID~QString;" target-start-line="29"/>
@@ -143,7 +144,7 @@
 <aop-project name="ex02"/>
 <aop-project name="ex06"/>
 <aop-project name="nam"/>
-<aop-project name="pro28"/>
-<aop-project name="pro27"/>
 <aop-project name="pro30"/>
+<aop-project name="pro27"/>
+<aop-project name="pro28"/>
 </aop-reference-model>
